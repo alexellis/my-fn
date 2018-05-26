@@ -7,3 +7,4 @@ functions:
     lang: go
     handler: ./hallo
     image: hallo
+
