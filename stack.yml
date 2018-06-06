@@ -8,5 +8,5 @@ functions:
     handler: ./hallo
     image: hallo
     secrets:
-     - hallo
+      - hallo
 
