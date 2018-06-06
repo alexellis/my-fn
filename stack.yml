@@ -9,3 +9,5 @@ functions:
     image: hallo
 
 
+#    secrets:
+#     - alexellis-hallo
