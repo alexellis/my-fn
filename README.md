@@ -1,2 +1,3 @@
 # my-fn
-Private functions
+
+Now public functions
