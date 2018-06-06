@@ -8,6 +8,5 @@ functions:
     handler: ./hallo
     image: hallo
 
-
 #    secrets:
 #     - alexellis-hallo
