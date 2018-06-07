@@ -7,7 +7,7 @@ functions:
     lang: go
     handler: ./hallo
     image: hallo
-    secrets:
-      - hallo
+#    secrets:
+#      - hallo
 
 # Build - 2
