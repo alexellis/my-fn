@@ -13,5 +13,5 @@ def handle(req):
             ret = { "text": "I got a message.. length: " + str(len(req)) }
             return json.dumps(ret)
 
-    return ""
+    return req
 
