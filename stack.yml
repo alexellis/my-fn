@@ -17,4 +17,6 @@ functions:
       write_debug: true
       read_debug: true
       content_type: application/json
+    secrets:
+      - slack-token
 
