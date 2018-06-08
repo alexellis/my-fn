@@ -9,5 +9,12 @@ functions:
     image: hallo
     secrets:
       - hallo
-
+  slack-me:
+    lang: python
+    handler: ./slack-me
+    image: alexellis/slack-me
+    environment:
+      write_debug: true
+      read_debug: true
+      content_type: application/json
 
