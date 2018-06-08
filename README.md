@@ -1,4 +1,3 @@
 # my-fn
 
-Now public functions
-
+Functions with secrets.
