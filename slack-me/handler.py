@@ -8,8 +8,8 @@ def handle(req):
     """
 
     qs = urlparse.parse_qs(req)
-    if "username" in qs:
-        if not qs["username"][0] == "outgoing-webhook":
+    if "user_name" in qs:
+        if not qs["user_name"][0] == "outgoing-webhook":
             ret = { "text": "I got a message.. length: " + str(len(req)) }
             return json.dumps(ret)
 
