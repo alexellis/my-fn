@@ -1,4 +1,3 @@
-import sys
 import json
 
 def handle(req):
@@ -8,7 +7,5 @@ def handle(req):
     """
 
     ret = { "text": "I got a message.. length: " + str(len(req)) }
-
-#    sys.stderr.write(req)
 
     return json.dumps(ret)
