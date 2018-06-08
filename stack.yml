@@ -8,7 +8,7 @@ functions:
     handler: ./hallo
     image: hallo
     secrets:
-      - hallo
+      - fn-secrets
   slack-me:
     lang: python
     handler: ./slack-me
@@ -18,5 +18,5 @@ functions:
       read_debug: true
       content_type: application/json
     secrets:
-      - slack-token
+      - fn-secrets
 
