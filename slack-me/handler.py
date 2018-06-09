@@ -10,7 +10,7 @@ def handle(req):
     qs = urlparse.parse_qs(req)
     if "user_name" in qs:
         if not qs["user_name"][0] == "slackbot":
-            ret = { "text": qs["user_name"][0] + " I got a message.. length: " + str(len(req)) }
+            ret = { "text": qs["user_name"][0] + " sent a message with a length of: " + str(len(req)) }
             return json.dumps(ret)
 
     return req
