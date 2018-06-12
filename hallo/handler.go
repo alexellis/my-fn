@@ -12,6 +12,6 @@ func Handle(req []byte) string {
 		return err.Error()
 	}
 
-	return "Your secret: " + string(file)
-	// return fmt.Sprintf("When 900 years old you reach, look as good you will not. %s (Yoda)", string(req))
+	return "Your secret was accessed and available, thanks."
+//	return "Your secret: " + string(file)
 }
