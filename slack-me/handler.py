@@ -14,7 +14,7 @@ def handle(req):
             msg = qs["text"][0]
             if "dockercon" in msg:
                 emoticons = ":whale:"
-            elseif "serverless" in msg:
+            elif "serverless" in msg:
                 emoticons = ":openfaas: :robot_face:"
             
             ret = { "text": qs["user_name"][0] + " sent a message with a length of: '" + str(len(req)) + "' " + emoticons }
