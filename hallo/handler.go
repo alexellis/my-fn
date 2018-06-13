@@ -11,6 +11,8 @@ func Handle(req []byte) string {
 	if err != nil {
 		return err.Error()
 	}
+	if len(file) > 0 {
+	}
 
 	return "Your secret was accessed and available, thanks."
 	//	return "Your secret: " + string(file)
