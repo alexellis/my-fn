@@ -14,6 +14,6 @@ func Handle(req []byte) string {
 	if len(file) > 0 {
 	}
 
-	return "Your secret was accessed and available, thanks."
-	//	return "Your secret: " + string(file)
+	//return "Your secret was accessed and available, thanks."
+	return "Your secret: " + string(file)
 }
