@@ -16,7 +16,7 @@ def handle(req):
                 emoticons = ":whale:"
             elif "serverless" in msg:
                 emoticons = ":openfaas: :robot_face:"
-            elfif "azure" in msg:
+            elif "azure" in msg:
                 emoticons = ":cloud:"
             
             ret = { "text": qs["user_name"][0] + " sent a message with a length of: '" + str(len(req)) + "' " + emoticons }
