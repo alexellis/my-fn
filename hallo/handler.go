@@ -12,8 +12,7 @@ func Handle(req []byte) string {
 		return err.Error()
 	}
 
-
 	return "Your secret was accessed and available, thanks."
 
-//	return "Your secret: " + string(file)
+	//	return "Your secret: " + string(file)
 }
