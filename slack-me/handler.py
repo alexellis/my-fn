@@ -21,7 +21,7 @@ def handle(req):
             elif "arm" in msg:
                 emoticons = ":muscle:"
             
-            ret = { "text": qs["user_name"][0] + " sent a message with a length of: '" + str(len(req)) + "' " + emoticons }
+            ret = { "text": qs["user_name"][0] + " sent a message with a length of... '" + str(len(req)) + "' " + emoticons }
             return json.dumps(ret)
 
     return req
