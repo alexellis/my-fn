@@ -16,7 +16,7 @@ functions:
     environment:
       write_debug: true
       read_debug: true
+      combine_output: false
       content_type: application/json
     secrets:
       - fn-secrets
-

@@ -1,5 +1,6 @@
 import json
 import urlparse
+import sys
 
 def handle(req):
     """handle a request to the function
@@ -7,7 +8,10 @@ def handle(req):
         req (str): request body
     """
 
+    sys.stderr.write(req)
+
     qs = urlparse.parse_qs(req)
+
     if "user_name" in qs:
         if not qs["user_name"][0] == "slackbot":
             emoticons = ""
@@ -25,4 +29,3 @@ def handle(req):
             return json.dumps(ret)
 
     return req
-
