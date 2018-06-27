@@ -19,7 +19,7 @@ def handle(req):
             elif "azure" in msg:
                 emoticons = ":cloud:"
             elif "sofia" in msg:
-                emoticons = ":flag-bg:"
+                emoticons = ":flag-bg: :flag-bg: :flag-bg:"
             
             ret = { "text": qs["user_name"][0] + " sent a message with a length of... '" + str(len(req)) + "' " + emoticons }
             return json.dumps(ret)
