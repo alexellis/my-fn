@@ -10,12 +10,12 @@ def handle(req):
 
     sys.stderr.write(req)
 
-    r = json.laods(req)
+    r = json.loads(req)
 
     if "challenge" in r:
         return challenge(r)
 
-    
+
 
 def callenge(r):
     if r["type"] == "url_verification":
