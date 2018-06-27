@@ -20,3 +20,15 @@ functions:
       content_type: application/json
     secrets:
       - fn-secrets
+
+  join-welcome:
+    lang: python
+    handler: ./join-welcome
+    image: alexellis/join-welcome:0.1
+    environment:
+      write_debug: true
+      read_debug: true
+      combine_output: false
+      content_type: application/json
+    secrets:
+      - fn-secrets
