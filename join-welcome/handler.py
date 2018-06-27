@@ -1,7 +1,7 @@
-import requests
-
 import json
 import sys
+
+import requests
 
 def challenge(r):
     if r["type"] == "url_verification":

@@ -22,7 +22,7 @@ functions:
       - fn-secrets
 
   join-welcome:
-    lang: python
+    lang: python3
     handler: ./join-welcome
     image: alexellis/join-welcome:0.1
     environment:
