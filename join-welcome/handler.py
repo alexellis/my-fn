@@ -28,4 +28,3 @@ def handle(req):
 
         out_req = requests.post(webhook_url, json=msg)
         print(str(out_req.status_code, out_req.text))
-
