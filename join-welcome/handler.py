@@ -17,7 +17,7 @@ def handle(req):
 
 
 
-def callenge(r):
+def challenge(r):
     if r["type"] == "url_verification":
         res = {"challenge": r["challenge"]}
         return json.dumps(res)
