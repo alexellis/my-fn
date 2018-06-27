@@ -1,5 +1,5 @@
-import json
 import sys
+import json
 
 import requests
 
