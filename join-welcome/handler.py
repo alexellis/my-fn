@@ -29,7 +29,7 @@ def handle(req):
                 if "user" in r["event"]:
                     user_name = r["event"]["user"]
                     who = "<@" + user_name + ">"
-                    emoticon_list = [":openfaas:", ":whale:", ":thumbsup:", ":wave:", ":sunglasses:", ":ok_hand:", ":chart_with_upwards_trend:", ":sunrise:", ":smiley:", ":smiley_cat:", ":parrot:", ":rocket:", ":100:", ":muscle:", ":signal_strength:", ":man-cartwheeling:"]
+                    emoticon_list = [":openfaas:", ":whale:", ":thumbsup:", ":wave:", ":sunglasses:", ":ok_hand:", ":chart_with_upwards_trend:", ":sunrise:", ":smiley:", ":smiley_cat:", ":parrot:", ":rocket:", ":100:", ":muscle:", ":signal_strength:", ":man-cartwheeling:", ":wink:", ":upside_down_face:", ":open_mouth:", ":ok_hand:", ":clap:", ":balloon:", ":tada:", ":confetti_ball:"]
 
                     emoticons = build_emoticons(emoticon_list)
 
