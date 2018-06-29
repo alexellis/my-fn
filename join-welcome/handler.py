@@ -57,7 +57,7 @@ def build_emoticons(emoticons):
     sample = random.sample(emoticons, 5)
 
     for emoticon in sample:
-        emoticon_str = emoticon_str + em + " "
+        emoticon_str = emoticon_str + emoticon + " "
 
     return emoticon_str
 
