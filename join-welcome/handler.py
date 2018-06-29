@@ -1,5 +1,6 @@
 import sys
 import json
+import random
 
 import requests
 
@@ -28,7 +29,7 @@ def handle(req):
                 if "user" in r["event"]:
                     user_name = r["event"]["user"]
                     who = "<@" + user_name + ">"
-                    emoticon_list = [":openfaas:", ":whale:", ":thumbsup:", ":wave:"]
+                    emoticon_list = [":openfaas:", ":whale:", ":thumbsup:", ":wave:", ":sunglasses:", ":ok_hand:", ":chart_with_upwards_trend:", ":sunrise:", ":smiley:", ":smiley_cat:", ":parrot:", ":rocket:", ":100:", ":muscle:", ":signal_strength:", ":man-cartwheeling:"]
 
                     emoticons = build_emoticons(emoticon_list)
 
@@ -39,7 +40,8 @@ def handle(req):
 
 def build_emoticons(emoticon_list):
     emoticons = ""
-    for em in emoticon_list:
+    sample = random.sample(emoticon_list, 5)
+    for em in sample:
         emoticons = emoticons + em + " "
 
     return emoticons
