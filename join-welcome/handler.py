@@ -22,7 +22,7 @@ def handle(req):
         webhook_url = webhook_url_text.read().strip()
 
         if "event" in r:
-            target_channel = os.Getenv("target_channel")
+            target_channel = os.getenv("target_channel")
             return process_event(r, target_channel, webhook_url)
 
     return "Nothing to do with webhook"
