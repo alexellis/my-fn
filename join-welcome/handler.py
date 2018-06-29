@@ -23,8 +23,11 @@ def handle(req):
 
     with open("/var/openfaas/secrets/incoming-webhook-url") as webhook_url_text:
         webhook_url = webhook_url_text.read().strip()
+        if "event" in r:
+            if "member_joined_channel" in r["event"]:
+                if "user" in r["event"]:
+                    user_name = r["event"]["user"]
+                    msg = {"text": "Welcome to " + user_name + "! :openfaas:"}
 
-        msg = {"text": "Hello, World!"}
-
-        # out_req = requests.post(webhook_url, json=msg)
-        #pr int(str(out_req.status_code), out_req.text)
+                    out_req = requests.post(webhook_url, json=msg)
+                    # print(str(out_req.status_code), out_req.text)

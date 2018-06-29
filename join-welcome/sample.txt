@@ -1,0 +1,94 @@
+
+alexellis-a02:~ alexellis$ kubectl logs -n openfaas-fn deploy/alexellis-join-welcome
+2018/06/29 08:43:09 Version: 0.8.0	SHA: 829262e493baf739fbd1c75d0ee5e853d15c7561
+2018/06/29 08:43:09 Writing lock-file to: /tmp/.lock
+2018/06/29 08:43:25 Forking fprocess.
+2018/06/29 08:43:25 Query  
+2018/06/29 08:43:25 Path  /function/alexellis-join-welcome
+2018/06/29 08:43:26 stderr: Traceback (most recent call last):
+  File "index.py", line 18, in <module>
+    ret = handler.handle(st)
+  File "/home/app/function/handler.py", line 19, in handle
+    r = json.loads(req)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018/06/29 08:43:26 Success=false, Error=exit status 1
+2018/06/29 08:43:26 Out=
+2018/06/29 08:43:29 Forking fprocess.
+2018/06/29 08:43:29 Query  
+2018/06/29 08:43:29 Path  /function/alexellis-join-welcome
+2018/06/29 08:43:30 stderr: Traceback (most recent call last):
+  File "index.py", line 18, in <module>
+    ret = handler.handle(st)
+  File "/home/app/function/handler.py", line 19, in handle
+    r = json.loads(req)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018/06/29 08:43:30 Success=false, Error=exit status 1
+2018/06/29 08:43:30 Out=
+2018/06/29 08:44:55 Forking fprocess.
+2018/06/29 08:44:55 Query  
+2018/06/29 08:44:55 Path  /function/alexellis-join-welcome
+2018/06/29 08:44:56 stderr: {}Traceback (most recent call last):
+  File "index.py", line 18, in <module>
+    ret = handler.handle(st)
+  File "/home/app/function/handler.py", line 30, in handle
+    print(str(out_req.status_code, out_req.text))
+TypeError: decoding to str: need a bytes-like object, int found
+2018/06/29 08:44:56 Success=false, Error=exit status 1
+2018/06/29 08:44:56 Out=
+2018/06/29 08:45:07 Forking fprocess.
+2018/06/29 08:45:07 Query  
+2018/06/29 08:45:07 Path  /function/alexellis-join-welcome
+2018/06/29 08:45:08 stderr: {}Traceback (most recent call last):
+  File "index.py", line 18, in <module>
+    ret = handler.handle(st)
+  File "/home/app/function/handler.py", line 30, in handle
+    print(str(out_req.status_code, out_req.text))
+TypeError: decoding to str: need a bytes-like object, int found
+2018/06/29 08:45:08 Success=false, Error=exit status 1
+2018/06/29 08:45:08 Out=
+2018/06/29 08:45:34 Forking fprocess.
+2018/06/29 08:45:34 Query  
+2018/06/29 08:45:34 Path  /function/alexellis-join-welcome
+2018/06/29 08:45:35 stderr: {"token":"TxDmxzEKs6n8IE7ufNAv66E3","team_id":"T1D1YB8KV","api_app_id":"ABETP5WH0","event":{"type":"member_joined_channel","user":"U1D395V4Y","channel":"C4XCQR8TY","channel_type":"C","team":"T1D1YB8KV","event_ts":"1530261934.000044"},"type":"event_callback","event_id":"EvBG7USYTC","event_time":1530261934,"authed_users":["U1D395V4Y"]}Traceback (most recent call last):
+  File "index.py", line 18, in <module>
+    ret = handler.handle(st)
+  File "/home/app/function/handler.py", line 30, in handle
+    print(str(out_req.status_code, out_req.text))
+TypeError: decoding to str: need a bytes-like object, int found
+2018/06/29 08:45:35 Success=false, Error=exit status 1
+2018/06/29 08:45:35 Out=
+2018/06/29 08:45:35 Forking fprocess.
+2018/06/29 08:45:35 Query  
+2018/06/29 08:45:35 Path  /function/alexellis-join-welcome
+2018/06/29 08:45:37 stderr: {"token":"TxDmxzEKs6n8IE7ufNAv66E3","team_id":"T1D1YB8KV","api_app_id":"ABETP5WH0","event":{"type":"member_joined_channel","user":"U1D395V4Y","channel":"C4XCQR8TY","channel_type":"C","team":"T1D1YB8KV","event_ts":"1530261934.000044"},"type":"event_callback","event_id":"EvBG7USYTC","event_time":1530261934,"authed_users":["U1D395V4Y"]}Traceback (most recent call last):
+  File "index.py", line 18, in <module>
+    ret = handler.handle(st)
+  File "/home/app/function/handler.py", line 30, in handle
+    print(str(out_req.status_code, out_req.text))
+TypeError: decoding to str: need a bytes-like object, int found
+2018/06/29 08:45:37 Success=false, Error=exit status 1
+2018/06/29 08:45:37 Out=
+2018/06/29 08:46:37 Forking fprocess.
+2018/06/29 08:46:37 Query  
+2018/06/29 08:46:37 Path  /function/alexellis-join-welcome
+2018/06/29 08:46:38 stderr: {"token":"TxDmxzEKs6n8IE7ufNAv66E3","team_id":"T1D1YB8KV","api_app_id":"ABETP5WH0","event":{"type":"member_joined_channel","user":"U1D395V4Y","channel":"C4XCQR8TY","channel_type":"C","team":"T1D1YB8KV","event_ts":"1530261934.000044"},"type":"event_callback","event_id":"EvBG7USYTC","event_time":1530261934,"authed_users":["U1D395V4Y"]}Traceback (most recent call last):
+  File "index.py", line 18, in <module>
+    ret = handler.handle(st)
+  File "/home/app/function/handler.py", line 30, in handle
+    print(str(out_req.status_code, out_req.text))
+TypeError: decoding to str: need a bytes-like object, int found
+2018/06/29 08:46:38 Success=false, Error=exit status 1
+2018/06/29 08:46:38 Out=
+alexellis-a02:~ alexellis$ 
