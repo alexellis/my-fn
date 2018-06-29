@@ -26,5 +26,5 @@ def handle(req):
 
         msg = {"text": "Hello, World!"}
 
-        out_req = requests.post(webhook_url, json=msg)
-        print(str(out_req.status_code), out_req.text)
+        # out_req = requests.post(webhook_url, json=msg)
+        #pr int(str(out_req.status_code), out_req.text)
