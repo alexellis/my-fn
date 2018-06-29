@@ -30,5 +30,6 @@ functions:
       read_debug: true
       combine_output: false
       content_type: application/json
+      target_channel: "C4XCQR8TY"
     secrets:
       - fn-secrets
