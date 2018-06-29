@@ -27,7 +27,19 @@ def handle(req):
             if r["event"]["type"] == "member_joined_channel":
                 if "user" in r["event"]:
                     user_name = r["event"]["user"]
-                    msg = {"text": "Welcome to <@" + user_name + ">! :openfaas: :whale: :thumbsup: :wave:"}
+                    who = "<@" + user_name + ">"
+                    emoticon_list = [":openfaas:", ":whale:", ":thumbsup:", ":wave:"]
+
+                    emoticons = build_emoticons(emoticon_list)
+
+                    msg = {"text": "Let's all welcome {} to the community! {} ".format(who, emoticons.strip())}
 
                     out_req = requests.post(webhook_url, json=msg)
                     # print(str(out_req.status_code), out_req.text)
+
+def build_emoticons(emoticon_list):
+    emoticons = ""
+    for em in emoticon_list:
+        emoticons = emoticons + em + " "
+
+    return emoticons
