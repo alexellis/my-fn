@@ -27,7 +27,7 @@ def handle(req):
             if r["event"]["type"] == "member_joined_channel":
                 if "user" in r["event"]:
                     user_name = r["event"]["user"]
-                    msg = {"text": "Welcome to " + user_name + "! :openfaas:"}
+                    msg = {"text": "Welcome to <@" + user_name + ">! :openfaas:"}
 
                     out_req = requests.post(webhook_url, json=msg)
                     # print(str(out_req.status_code), out_req.text)
