@@ -19,7 +19,7 @@ def handle(req):
             if "dockercon" in msg:
                 emoticons = ":whale:"
             elif "serverless" in msg:
-                emoticons = ":openfaas: :robot_face:"
+                emoticons = ":openfaas: :+1: :robot_face:"
             elif "azure" in msg:
                 emoticons = ":cloud:"
             elif "sofia" in msg:
