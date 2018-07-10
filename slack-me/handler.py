@@ -26,6 +26,8 @@ def handle(req):
                 emoticons = ":flag-bg: :flag-bg: :flag-bg:"
             elif "signup" in msg:
                 emoticons = ":+1:"
+            elif "lucas" in msg:
+                emoitcons = ":flag-de:"
             
             ret = { "text": qs["user_name"][0] + " sent a message with a length of... '" + str(len(req)) + "' " + emoticons }
             return json.dumps(ret)
