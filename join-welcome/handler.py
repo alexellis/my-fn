@@ -63,3 +63,5 @@ def build_emoticons(emoticons):
 
 def log_event(req):
     sys.stderr.write(req)
+
+    
